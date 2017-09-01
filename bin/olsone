@@ -24,6 +24,12 @@ if test $hflg -eq 1 ;then
 	exit 0
 fi
 
+if test ! "$(which column)" ;then
+    echo "bsdmainutils: not found"
+    echo "try to install bsdmainutils"
+    exit 0
+fi
+
 if test $dflg -eq 1 ;then
 	ls -CF1 | grep -E '\/$' | sed -E 's/^(.*)./\1/g' > ols.first
 	cat ols.first | while read var ;do echo '\033[01;34m'${var}'\033[0;39m' >> ols1.out ;done
