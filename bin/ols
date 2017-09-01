@@ -12,20 +12,19 @@ if test ! $# -eq 0 -a "$1" = "--less" ;then
 	exit 0
 fi
 
-while getopts hdxo1g:v:a opt ;do
+while getopts hdxog:v:a opt ;do
 	case $opt in
 		h)hflg=1;;
 		d)dflg=1;;
 		x)xflg=1;;
 		o)oflg=1;;
-		1)$HOME/mgtools/olsone; exit 0;;
 		g)gflg=1;garg=$OPTARG;;
 		v)vflg=1;varg=$OPTARG;;
 		a)aflg=1;;
 	esac
 done
 
-allrm 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
+rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
 
 if test $hflg -eq 1 ;then
 	echo 'Usage: ols [option]\n d: dir\n x: ex\n n: others\n 1: one line\n g [pattern]: grep\n v [pattern]: grep  v\n --less : show result by less'
@@ -88,7 +87,7 @@ if test $dflg -eq 1 ;then
 		mv ols1.out.bk ols1.out
 	fi
 	cat ols1.out
-	allrm 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
+	rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
 	exit 0
 fi
 
@@ -148,7 +147,7 @@ if test $xflg -eq 1 ;then
 		mv ols2.out.bk ols2.out
 	fi
 	cat ols2.out
-	allrm 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
+	rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
 	exit 0
 fi
 
@@ -210,7 +209,7 @@ if test $oflg -eq 1 ;then
 		mv ols3.out.bk ols3.out
 	fi
 	cat ols3.out
-	allrm 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
+	rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
 	exit 0
 fi
 
@@ -419,4 +418,4 @@ if test -f ols3.out ;then
 	cat ols3.out
 fi
 
-allrm 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
+rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f'
