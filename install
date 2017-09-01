@@ -250,7 +250,7 @@ $fzf_key_bindings
 
 # fzf2nd alias
 # ------------
-alias fzf_d="cd \$(__fzf_myselect_cd__)"
+alias fzf_d="cd \\\$(__fzf_myselect_cd__)"
 
 EOF
   echo "OK"
