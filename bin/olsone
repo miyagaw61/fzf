@@ -17,7 +17,7 @@ while getopts hdxog: opt ;do
 done
 shift $(($OPTIND - 1))
 
-rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f ols.result'
+rm -rf ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f ols.result
 
 if test $hflg -eq 1 ;then
 	echo 'Usage: ol'
@@ -82,7 +82,7 @@ if test $nflg -eq 0 ;then
 	fi
 	cat ols.result
 
-	rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f ols.result'
+	rm -rf ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f ols.result
 	exit 0
 fi
 
@@ -113,4 +113,4 @@ else
 	echo 'nobodys here'
 fi
 
-rm -rf 'ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f ols.result'
+rm -rf ols.first ols1.out ols1.out.1 ols1.out.2 ols1.out.3 ols1.out.4 ols1.out.f ols2.out ols2.out.1 ols2.out.2 ols2.out.3 ols2.out.4 ols2.out.f ols3.out ols3.out.1 ols3.out.2 ols3.out.3 ols3.out.4 ols3.out.f ols.result
