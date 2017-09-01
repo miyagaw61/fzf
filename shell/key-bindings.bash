@@ -17,7 +17,7 @@ __fzf_myselect__() {
   #  -o -type d -print \
   #  -o -type l -print 2> /dev/null | cut -b3-"}"
   #eval "$cmd" | FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse $FZF_DEFAULT_OPTS $FZF_CTRL_T_OPTS" fzf -m "$@" | while read -r item; do
-  ols -1 | FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse $FZF_DEFAULT_OPTS $FZF_CTRL_T_OPTS" fzf --ansi -m "$@" | while read -r item ; do
+  $HOME/.fzf/bin/ols -1 | FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse $FZF_DEFAULT_OPTS $FZF_CTRL_T_OPTS" fzf --ansi -m "$@" | while read -r item ; do
     printf '%q ' "$item"
   done
   echo
