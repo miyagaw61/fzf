@@ -1,8 +1,6 @@
 from enert import *
 
-now, err = shell("pwd").get()
-ls, err = shell("ls -F " + now).get()
-ls = ls.split()
+ls, err = shell("ls -F").linedata()
 directory = []
 elf = []
 others = []
