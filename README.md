@@ -42,6 +42,7 @@ type `'foo` can search 'foo' with exact match.
 type `<C-j>` can move down.( `<C-j>` is `CTRL` + `J` )  
 type `<C-k>` can move up.  
 type `<Tab>` can multiple select.  
+type `<C-c>` can quit.
 `<C-o>` can auto ` | fzf2nd` injection.
 
 ```sh
