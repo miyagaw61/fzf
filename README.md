@@ -22,25 +22,28 @@ cargo install ripgrep
 second, clone this repository and run install script.
 
 ```sh
-git clone --depth 1 https://github.com/miyagaw61/fzf2nd.git ~/.fzf
+git clone https://github.com/miyagaw61/fzf2nd.git ~/.fzf
 ~/.fzf/install
 ```
 
 Upgrading fzf2nd
 -------------
 
-- git: `cd ~/.fzf && git pull && ./install`
+```
+cd ~/.fzf && git pull && ./install
+```
 
 Usage - fzf2nd's new functions
 -----
 
-fzf will launch interactive finder, read the list from STDIN, and write the selected item to STDOUT.
+fzf will launch interactive finder, read the list from STDIN, and write the selected item to STDOUT.  
 type `foo` can search 'foo' with ambiguous match.  
 type `'foo` can search 'foo' with exact match.  
 `<C-o>` can auto ` | fzf2nd` injection.(`<C+o>` is `CTRL`+`O`)  
 
 ```sh
-find -type f | fzf2nd > selected
+find | fzf2nd > selected
+vim $(find /etc -type f | fzf2nd)
 ```
 
 `<C+j>` can find current directory (depth=1)  
