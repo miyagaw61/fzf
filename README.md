@@ -39,6 +39,7 @@ Usage - fzf2nd's new functions
 fzf will launch interactive finder, read the list from STDIN, and write the selected item to STDOUT.  
 type `foo` can search 'foo' with ambiguous match.  
 type `'foo` can search 'foo' with exact match.  
+type `<Tab>` can multiple select.
 `<C-o>` can auto ` | fzf2nd` injection.(`<C+o>` is `CTRL`+`O`)  
 
 ```sh
@@ -56,6 +57,19 @@ vim <C+j>
 
 ```sh
 vim <C+k>
+```
+
+cd with fzf2nd
+
+```sh
+fzf_d
+```
+
+use fzf2nd in shell script.
+
+```sh
+arg=$(ls ./ | fzf2nd)
+echo $arg
 ```
 
 fzf default README.md
