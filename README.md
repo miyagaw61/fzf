@@ -3,7 +3,7 @@
 
 fzf2nd is a general-purpose command-line fuzzy finder for bash.
 
-<img src="https://raw.githubusercontent.com/junegunn/i/master/fzf-preview.png" width=640>
+![top](https://i.imgur.com/woJMa2q.png)
 
 It's an interactive Unix filter for command-line that can be used with any
 list; files, command history, processes, hostnames, bookmarks, git commits,
