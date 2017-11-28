@@ -39,24 +39,26 @@ Usage - fzf2nd's new functions
 fzf will launch interactive finder, read the list from STDIN, and write the selected item to STDOUT.  
 type `foo` can search 'foo' with ambiguous match.  
 type `'foo` can search 'foo' with exact match.  
+type `<C-j>` can move down.( `<C-j>` is `CTRL` + `J` )
+type `<C-k>` can move up.
 type `<Tab>` can multiple select.  
-`<C-o>` can auto ` | fzf2nd` injection.(`<C+o>` is `CTRL`+`O`)  
+`<C-o>` can auto ` | fzf2nd` injection.
 
 ```sh
 find | fzf2nd > selected
 vim $(find /etc -type f | fzf2nd)
 ```
 
-`<C+j>` can find current directory (depth=1)  
+`<C-j>` can find current directory (depth=1)  
 
 ```sh
-vim <C+j>
+vim <C-j>
 ```
 
-`<C+k>` can find current directory (depth=∞)
+`<C-k>` can find current directory (depth=∞)
 
 ```sh
-vim <C+k>
+vim <C-k>
 ```
 
 `,<Tab>` can grate completion
