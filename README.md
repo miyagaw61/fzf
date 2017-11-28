@@ -72,7 +72,7 @@ fzf_d
 use fzf2nd in shell script.  
 
 ```sh
-arg=$(ls | fzf2nd)
+arg=$(find -type f | fzf2nd)
 set $arg
 echo selected num : $#
 echo selected factors : $@
