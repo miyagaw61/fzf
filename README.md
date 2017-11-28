@@ -59,6 +59,10 @@ vim <C+j>
 vim <C+k>
 ```
 
+`,<Tab>` can grate completion
+
+![completion](https://i.imgur.com/n7gyYR0.png)
+
 cd with fzf2nd
 
 ```sh
@@ -66,7 +70,6 @@ fzf_d
 ```
 
 use fzf2nd in shell script.  
-you can execute the following shell script by `fzf2nd_example.sh`.
 
 ```sh
 arg=$(ls | fzf2nd)
@@ -75,6 +78,11 @@ echo selected num : $#
 echo selected factors : $@
 echo selected arg1 : $1
 ```
+
+you can this shell script by `fzf2nd_example.sh`.
+
+![example1](https://i.imgur.com/VgStLwv.png)
+![example2](https://i.imgur.com/jh3akEm.png)
 
 fzf default README.md
 ---------------------
