@@ -85,7 +85,7 @@ echo selected factors : $@
 echo selected factor1 : $1
 ```
 
-you can this shell script by `fzf2nd_example.sh`.
+you can execute this shell script by `fzf2nd_example.sh`.
 
 ![example1](https://i.imgur.com/gwYjmC2.png)  
 ![example2](https://i.imgur.com/C6a2yCk.png)
