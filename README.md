@@ -69,7 +69,10 @@ cd with fzf2nd
 fzf_d
 ```
 
-use fzf2nd in shell script.  
+![fzf_d1](https://i.imgur.com/QtUDpQ2.png)
+![fzf_d2](https://i.imgur.com/SnMNZph.png)
+
+you can use fzf2nd in shell script.  
 
 ```sh
 arg=$(find -type f | fzf2nd)
