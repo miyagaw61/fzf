@@ -39,8 +39,8 @@ Usage - fzf2nd's new functions
 fzf will launch interactive finder, read the list from STDIN, and write the selected item to STDOUT.  
 type `foo` can search 'foo' with ambiguous match.  
 type `'foo` can search 'foo' with exact match.  
-type `<C-j>` can move down.( `<C-j>` is `CTRL` + `J` )
-type `<C-k>` can move up.
+type `<C-j>` can move down.( `<C-j>` is `CTRL` + `J` )  
+type `<C-k>` can move up.  
 type `<Tab>` can multiple select.  
 `<C-o>` can auto ` | fzf2nd` injection.
 
