@@ -76,13 +76,13 @@ arg=$(find -type f | fzf2nd)
 set $arg
 echo selected num : $#
 echo selected factors : $@
-echo selected arg1 : $1
+echo selected factor1 : $1
 ```
 
 you can this shell script by `fzf2nd_example.sh`.
 
-![example1](https://i.imgur.com/VgStLwv.png)
-![example2](https://i.imgur.com/jh3akEm.png)
+![example1](https://i.imgur.com/gwYjmC2.png)  
+![example2](https://i.imgur.com/C6a2yCk.png)
 
 fzf default README.md
 ---------------------
