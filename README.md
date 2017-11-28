@@ -65,11 +65,15 @@ cd with fzf2nd
 fzf_d
 ```
 
-use fzf2nd in shell script.
+use fzf2nd in shell script.  
+you can execute the following shell script by `fzf2nd_example.sh`.
 
 ```sh
-arg=$(ls ./ | fzf2nd)
-echo $arg
+arg=$(ls | fzf2nd)
+set $arg
+echo selected num : $#
+echo selected factors : $@
+echo selected arg1 : $1
 ```
 
 fzf default README.md
